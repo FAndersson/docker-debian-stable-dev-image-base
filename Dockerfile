@@ -1,9 +1,9 @@
 # Docker image containing generic tools for development, based on Debian latest (stable).
 
-FROM debian:stable-20211011
+FROM debian:stable-20220509
 
 # Basic build/development tools
-RUN apt-get update --quiet --yes && apt-get install --quiet --yes git vim wget curl
+RUN apt-get update --quiet --yes && apt-get install --quiet --yes curl git man-db vim wget
 
 # Install Git LFS
 RUN curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash
