@@ -3,7 +3,12 @@
 FROM debian:stable-20230612
 
 # Basic build/development tools
-RUN apt-get update --quiet --yes && apt-get install --quiet --yes curl git man-db vim wget
+RUN apt-get update --quiet --yes && apt-get install --quiet --yes \
+    curl \
+    git \
+    man-db \
+    vim \
+    wget
 
 # Install Git LFS
 RUN curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash
