@@ -1,4 +1,5 @@
-# Docker image containing generic tools for development, based on Debian latest (stable).
+# Docker image containing generic tools for development, based on Debian latest
+# (stable).
 
 FROM debian:stable-20240701
 
